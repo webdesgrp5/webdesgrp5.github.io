@@ -1,0 +1,297 @@
+<!doctype html>
+<!doctype html>
+
+<html> <!-- COPY BOOTSTRAP-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<head>
+
+
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+<title>Shorts Buffet | Order</title>
+
+
+	<nav class="navbar navbar-fixed-top">
+		<div class="container-fluid">
+			
+			<ul id="navbar">
+			
+			<!-- This is the hamburger menu -->
+			<button id="menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+			</button>
+			
+				<span id="brand"> <!-- Logo -->
+					<a href="index.html">	
+						<img src="Logo.png" width="135" height="120" class="logo zoom">
+					</a>
+				</span>
+
+			<div class="collapse navbar-collapse" id="myNavbar"> <!-- for hamburger menu -->
+			
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">About the Shop</a></li>
+				<li><a href="#">Shorts</a></li>
+				<li><a href="#">Other Brands</a></li>
+				<li class="active"><a href="contactus.html">Contact Us</a></li>
+			</div>
+			
+			</ul>
+		</div>
+	</nav>
+<style>
+    body{
+        background-color:#ADD8E6;
+    }   
+     form{
+        background-color:#FFF;
+    }    
+		ul { 
+		
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: none;
+			
+		}
+		
+		li { 
+			
+			float: left;
+			left: 10%; 
+			position: relative;
+			padding-top: 10px;
+		}
+		
+		li a { 
+		
+			display: block;
+			text-align: center;
+			margin-left: 50px;
+			margin-top: 25px;
+			color: #fff;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-weight: 450;
+			font-family: LemonMilklight;
+			font-size: 17px;
+			
+			}
+			
+		@font-face { 
+			
+			font-family: LemonMilklight;
+			src: url("LemonMilklight.otf") format("opentype");
+		
+		}	
+		
+    h1, body { 
+			
+			font-family: LemonMilklight;
+            align-items: center;
+    }
+		li a:visited { 
+  			text-decoration: none;
+		}
+		
+		li a:link{
+			text-decoration: none;
+		}
+
+		
+		li a:hover { 
+		
+			opacity: 10;
+			box-shadow: #fff;
+			background: rgba(255, 255, 255, 0.1);
+			color: rgb(67, 124, 161);
+			text-decoration: none;
+
+		}
+		
+		li a:active {
+  			text-decoration: none;
+		}
+
+		
+		nav #brand { 
+				
+			float: left;
+			display: block;
+			margin-left: 50px;
+			line-height: 70px;
+			transition: all 0.3s ease-out;
+			
+				
+		}
+		   
+		.icon-bar { 
+			
+			padding-top: 3px;
+			margin-top: 30px;
+			background-color: #1F618D !important;
+
+		}
+		
+		
+		.footer { 
+		   
+			background-color: #ADD8E6;
+			height: 100px;
+			
+		}	
+        .section
+            {
+        background-color: #ADD8E6;
+        height: auto;
+        width: auto;
+        margin-left: 45px;
+        margin-right: auto;
+        text-align: center;
+            }
+		
+		/* width */
+	
+		::-webkit-scrollbar {
+ 
+			width: 12px;
+		
+		}
+
+		/* Track */
+		
+		::-webkit-scrollbar-track {
+  
+			box-shadow: inset 0 0 5px black; 
+			border-radius: 10px;
+		
+		}
+
+		/* Handle */
+
+		::-webkit-scrollbar-thumb {
+  
+			background: #85aff2; 
+			border-radius: 10px;
+
+		}
+    
+    input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #ADD8E6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #85aff2;
+}
+
+</style>
+</head>
+       <br \>
+      <br \>
+      <br \>
+      <br \>
+      <br \>
+      <br \>
+<body>
+  <form method="post" action="mailto:eichelletrading@gmail.com" autocomplete=on class="container">
+      <h1> Order Form</h1>
+      
+    <h3>Maximum order of 10 pieces only</h3>
+      <br />
+<!--    /* Choose categories */-->
+    Category:
+    <br />
+    <br />
+    <input type="radio" name="Category">Choice
+    <input type="radio" name="Category">Choice
+    <input type="radio" name="Category">Choice
+    <br />
+    <br />
+    
+<!--    Drop down menu-->
+      Item: <input list ="Item List">
+      <br />
+      <datalist id="Item List">
+<!--        Sample /* name="Item List" value="type">Item Name/Description*/-->
+        <option name="Item List" value="Type"> Description
+        <option name="Item List" value="Type"> Description
+        <option name="Item List" value="Type">Description
+        <option name="Item List" value="Type">Description
+        <option name="Item List" value="Type">Description
+        <option name="Item List" value="Type">Description
+        <option name="Item List" value="Type">Description
+        <option name="Item List" value="Type">Description
+        <option name="Item List" value="Type">Description
+      </datalist>
+      <br />
+    Quantity:
+      <br />
+      <select name="Quantity"> 
+          <option> 1 </option>
+          <option> 2 </option>
+          <option> 3</option>
+          <option> 4</option>
+          <option> 5</option>
+          <option> 6</option>
+          <option> 7</option>
+          <option> 8</option>
+          <option> 9</option>
+          <option> 10</option>
+      </select>
+    <br />
+    <input type="submit" value="Submit">
+ <br />
+ <br />
+
+  </form>
+  
+  <div class="footer"> 
+</br>
+	
+	<center><p style="font-family: LemonMilklight; font-size:10px; color: dimgray;" align="center"> Developed by Rocamora | De Los Reyes | Sevilla | Febre | Ang</p></blockquote></center>
+	<center><p style="font-family: LemonMilklight; font-size:10px; color: dimgray;" align="center"> IT130L - EM01</p></blockquote></center>
+
+</div>
+
+		<!-- ----------------------------------- START COPY PASTING FROM HERE PT.3 ------------------------------- -->
+
+<script> 
+	
+	$(document).on('scroll', function (e) {
+	   if ($(window).width() > 100) {
+		   var rgba = $(document).scrollTop() / 500;
+	  $('.navbar').css('background-color', 'rgba(173,216,230,' + rgba + ')');
+	   }
+   })
+	   
+	   </script>
+
+</body>
+</html>
